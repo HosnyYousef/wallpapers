@@ -4,11 +4,16 @@
 // function getDrink(){
 //     let drink = (document.querySelector('input').value)
 
-const { clear } = require('console');
-const https = require('https')
+// const { clear } = require('console');
+// const https = require('https')
 
-require('dotenv').config()
-var myAPIkey = process.env.APIkey
+import './loadEnv';
+// import express from 'express';
+let myAPIkey = process.env.APIkey
+console.log(myAPIkey);
+require('dotenv').config({path:'.env'})
+// var myAPIkey = process.env.APIkey
+
 
 // console.log(myAPIkey)
 // console.log(process.env)
