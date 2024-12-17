@@ -8,7 +8,7 @@
 fetch("https://api.unsplash.com/search/photos?query=wallpapers&client_id=9lQBKPrQjQe082N8nFYs2JVhtdx7-zFfOWlXyPWq2j8")
   .then(res => res.json()) // parse response as JSON
   .then(data => {
-        console.log(data.results[0].urls.full)
+        console.log(data.results)
       // document.querySelector('h2').innerText = data.items[0].name
       document.querySelector('img').src = data.results[0].urls.full
       // document.querySelector('h3').innerText = data.items[0].description
